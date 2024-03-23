@@ -1,0 +1,16 @@
+BUILD=$ROOT/build
+BIN=$BUILD/bin
+
+O=o
+OS=$O
+
+TUPLE=i686-elf-
+CC=${TUPLE}cc
+LD=${TUPLE}ld
+AS=${TUPLE}as
+CFLAGS=
+LDFLAGS=
+AFLAGS=
+CLEANFILES=
+
+INSTALL=install

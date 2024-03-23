@@ -1,0 +1,16 @@
+PROG=$O.$TARG
+
+all:V: $PROG
+
+$PROG: $OFILES $LIB
+	$LD -o $target $prereq $LDFLAGS
+
+install:V: $TARG.install
+%.install:V: $BIN/%
+
+$BIN/%:	$O.%
+	$INSTALL $O.$stem $BIN/$stem
+
+CLEANFILES=$CLEANFILES $PROG
+
+<$ROOT/src/mkcommon

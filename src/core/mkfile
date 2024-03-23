@@ -1,0 +1,12 @@
+<$ROOT/src/mkhdr
+
+TARG=kernel.bin
+
+LDFLAGS=\
+	-T linker.ld\
+
+OFILES=\
+	_start.$O\
+	entry.$O\
+
+<$ROOT/src/mkone

@@ -1,0 +1,8 @@
+<$ROOT/src/mkhdr
+
+DIRS=\
+	core\
+	servers\
+	apps\
+
+<$ROOT/src/mkdirs

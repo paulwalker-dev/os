@@ -1,0 +1,5 @@
+<$ROOT/src/mkhdr
+
+DIRS=\
+
+<$ROOT/src/mkdirs

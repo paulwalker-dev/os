@@ -1,0 +1,16 @@
+%.$O: $HFILES
+
+%.$O: %.c
+	$CC $CFLAGS -c -o $target $stem.c
+
+%.$O: %.s
+	$AS $AFLAGS -o $target $stem.s
+
+clean:V: clean-common
+%.clean:V: %.clean-common
+
+clean-common:
+	rm -f *.[$OS] [$OS].out $CLEANFILES
+
+%.clean-common:V:
+	rm -f $stem.[$OS] [$OS].$stem $stem
