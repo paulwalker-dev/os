@@ -6,6 +6,9 @@
 %.$O: %.s
 	$AS $AFLAGS -o $target $stem.s
 
+%.$O: %.asm
+	nasm -f elf $stem.asm
+
 clean:V: clean-common
 %.clean:V: %.clean-common
 

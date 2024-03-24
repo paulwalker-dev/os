@@ -15,7 +15,7 @@
       in {
         devShells.default = pkgsCross.mkShell {
           nativeBuildInputs = with pkgs; [
-            nixfmt qemu
+            nixfmt qemu bear nasm
             (callPackage (import ./misc/mk.nix) { })
           ];
         };

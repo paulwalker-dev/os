@@ -2,3 +2,5 @@ build
 o.*
 *.o
 .direnv
+
+compile_commands.json

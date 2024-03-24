@@ -2,11 +2,22 @@
 
 TARG=kernel.bin
 
+CFLAGS=\
+	-ffreestanding\
+	-nostdlib\
+	-O2\
+	-Wall\
+	-Wextra\
+
 LDFLAGS=\
 	-T linker.ld\
+
+HFILES=\
+	gdt.h\
 
 OFILES=\
 	_start.$O\
 	entry.$O\
+	gdt.$O\
 
 <$ROOT/src/mkone
