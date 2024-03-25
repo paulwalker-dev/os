@@ -1,3 +1,3 @@
 #pragma once
 
-void init_gdt(void);
+void gdt_init(void);
