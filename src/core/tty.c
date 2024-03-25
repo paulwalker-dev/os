@@ -4,7 +4,7 @@
 
 static tty_pos pos;
 
-static tty_update_cursor(void)
+static void tty_update_cursor(void)
 {
 	uint16_t coord = pos.y*TTY_WIDTH + pos.x;
 	outb(0x3D4, 0x0F);
