@@ -13,15 +13,15 @@ LDFLAGS=\
 	-T linker.ld\
 
 HFILES=\
-	tty.h\
 	gdt.h\
 	pager.h\
 
 OFILES=\
 	_start.$O\
 	entry.$O\
-	tty.$O\
 	gdt.$O\
 	pager.$O\
+
+BIN=$BUILD/core
 
 <$ROOT/src/mkone

@@ -23,6 +23,8 @@ void tty_init(void)
 
 	pos.x = coord % TTY_WIDTH;
 	pos.y = coord / TTY_WIDTH;
+
+	tty_puts("TTY Initialized\n");
 }
 
 static void tty_nextpos()
