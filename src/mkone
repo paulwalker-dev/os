@@ -8,7 +8,7 @@ $PROG: $OFILES $LIB
 install:V: $TARG.install
 %.install:V: $BIN/%
 
-$BIN/%:	$O.%
+$BIN/%: $O.%
 	mkdir -p $BIN
 	$INSTALL $O.$stem $BIN/$stem
 

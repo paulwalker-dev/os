@@ -1,5 +1,6 @@
 BUILD=$ROOT/build
 BIN=$BUILD/bin
+LIBDIR=$BUILD/lib
 
 O=o
 OS=$O

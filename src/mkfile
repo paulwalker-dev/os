@@ -1,6 +1,15 @@
 <$ROOT/src/mkhdr
 
+CFLAGS=\
+	-ffreestanding\
+	-nostdlib\
+	-O2\
+	-Wall\
+	-Wextra\
+
 DIRS=\
 	core\
+	lib\
+	bin\
 
 <$ROOT/src/mkdirs
